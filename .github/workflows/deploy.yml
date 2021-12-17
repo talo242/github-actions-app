@@ -7,6 +7,6 @@ on:
 
 jobs:
   test:
-    uses: talo242/github-actions-app/.github/actions/test.yml@main
+    uses: talo242/github-actions-app/.github/workflows/test.yml@main
   build:
-    uses: talo242/github-actions-app/.github/actions/build.yml@main
+    uses: talo242/github-actions-app/.github/workflows/build.yml@main
