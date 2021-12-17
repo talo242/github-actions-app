@@ -1,5 +1,11 @@
 name: Test
 
+on:
+  workflow_call:
+    secrets:
+      token:
+        required: true
+
 jobs:
   test:
     runs-on: ubuntu-latest
