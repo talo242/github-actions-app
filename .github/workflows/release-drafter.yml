@@ -1,4 +1,4 @@
-name: Generate release draft
+name: Release Drafter
 
 on:
   workflow_call:
