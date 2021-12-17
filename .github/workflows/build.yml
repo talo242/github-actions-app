@@ -1,4 +1,4 @@
-name: Test
+name: Build Task
 
 on:
   workflow_call:
@@ -7,13 +7,14 @@ on:
         required: true
 
 jobs:
-  test:
+  build:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@master
+      - uses: actions/checkout@v2
 
-      - name: yarn install & test
+      - name: yarn install & build
         run: |
           yarn install
-          yarn test
+          yarn build
+

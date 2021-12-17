@@ -7,4 +7,4 @@ on:
 
 jobs:
   test:
-    uses: talo242/github-actions-app/.github/workflows/test.yml@ce07ff92fd5b5a0c7e355993d92505da5f1279a6
+    uses: talo242/github-actions-app/.github/workflows/test.yml@main
