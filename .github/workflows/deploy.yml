@@ -1,4 +1,4 @@
-name: Publish on Netlify
+name: Deploy task
 
 on:
   push:
@@ -7,21 +7,6 @@ on:
 
 jobs:
   test:
-    uses: talo242/github-actions-app/.github/workflows/test.yml@v1
-
-  deploy:
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: actions/checkout@v2
-
-      - name: Publish
-        uses: netlify/actions/build@master
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-          NETLIFY_BASE: site
-          NETLIFY_CMD: npm build
-          NETLIFY_DIR: site/build
-
-
+    uses: talo242/github-actions-app/.github/actions/test.yml@main
+  build:
+    uses: talo242/github-actions-app/.github/actions/build.yml@main
