@@ -6,6 +6,9 @@ on:
       - main
 
 jobs:
+  test:
+    uses: talo242/github-actions-app/test.yml@v1
+
   deploy:
     runs-on: ubuntu-latest
 
