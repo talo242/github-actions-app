@@ -11,6 +11,3 @@ jobs:
 
   build:
     uses: talo242/github-actions-app/.github/workflows/build.yml@main
-
-  update-release-notes:
-    uses: talo242/github-actions-app/.github/workflows/release-drafter.yml@main
