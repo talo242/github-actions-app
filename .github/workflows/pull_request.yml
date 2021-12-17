@@ -8,3 +8,6 @@ on:
 jobs:
   test:
     uses: talo242/github-actions-app/.github/workflows/test.yml@main
+
+  update_release_notes:
+    uses: talo242/github-actions-app/.github/workflows/release-drafter.yml@main
