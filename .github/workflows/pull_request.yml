@@ -8,5 +8,3 @@ on:
 jobs:
   test:
     uses: talo242/github-actions-app/.github/workflows/test.yml@main
-    secrets:
-      token: {{ secrets.GITHUB_TOKEN }}
