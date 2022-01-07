@@ -6,5 +6,11 @@ on:
       - main
 
 jobs:
+  lint:
+    uses: talo242/github-actions-test/.github/workflows/test.yml@main
+
   test:
-    uses: talo242/github-actions-app/.github/workflows/test.yml@main
+    uses: talo242/github-actions-test/.github/workflows/test.yml@main
+
+  update_release_notes:
+    uses: talo242/github-actions-test/.github/workflows/release-drafter.yml@main

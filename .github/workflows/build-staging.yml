@@ -7,7 +7,10 @@ on:
 
 jobs:
   test:
-    uses: talo242/github-actions-app/.github/workflows/test.yml@main
+    uses: talo242/github-actions-test/.github/workflows/test.yml@v0.1.0
 
   build:
-    uses: talo242/github-actions-app/.github/workflows/build.yml@main
+    uses: talo242/github-actions-test/.github/workflows/build.yml@v0.1.0
+
+  update_release_notes:
+    uses: talo242/github-actions-test/.github/workflows/release-drafter.yml@main
